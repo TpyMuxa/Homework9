@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     // Объявить метод «сгенерироватьМассив»
@@ -45,5 +46,20 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minCostDay + " рублей");
         System.out.println("Максимальная сумма трат за день составила " + maxCostDay + " рублей");
+    }
+
+    public static void task3() {
+        int[] arr = generateRandomArray();
+        // int[] arr — объявление массива
+        // generateRandomArray() — вызов метода «сгенерироватьМассив»
+        // Далее пишем код для задачи
+        System.out.println("Задание 3");
+        double paymentsPerMonth = 0;
+        double averageCostMonth = 0;
+        for (int i = 0; i < arr.length; i++) {
+            paymentsPerMonth = paymentsPerMonth + arr[i];
+        }
+        averageCostMonth = paymentsPerMonth / arr.length;
+        System.out.printf("Средняя сумма трат за месяц составила %.2f рублей", averageCostMonth);
     }
 }
