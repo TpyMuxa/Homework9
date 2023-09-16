@@ -61,5 +61,11 @@ public class Main {
         }
         averageCostMonth = paymentsPerMonth / arr.length;
         System.out.printf("Средняя сумма трат за месяц составила %.2f рублей", averageCostMonth);
+
+        System.out.println("\nЗадание 4");
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
+        }
     }
 }
